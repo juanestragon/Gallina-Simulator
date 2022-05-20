@@ -39,6 +39,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -205,7 +206,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9f277384a8973a620800000000000000
-      internalID: 2784202629469139705
+      internalID: -2550600951262911605
       vertices: []
       indices: 
       edges: []
@@ -220,6 +221,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      calabaza_3: -2550600951262911605
+      calabaza_4: 3410873538426383132
+      calabaza_1: 8091385568347025015
+      calabaza_0: -4044648767452051171
+      calabaza_2: -8802065215444647365
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
