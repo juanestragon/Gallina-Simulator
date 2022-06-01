@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class waypointsenemies : MonoBehaviour
 {
+    public Transform zorro;
+    public SpriteRenderer sp;
+    public Transform flip1;
+    public Transform flip2;
     [SerializeField] List<Transform> wayPoints;
     public float velocidad;
     public float distanciaCambio;
@@ -29,6 +33,12 @@ public class waypointsenemies : MonoBehaviour
             if (siguienteposicion >= wayPoints.Count)
             siguienteposicion = 0;
             
+        }
+        if(zorro.position == flip1.position){
+            sp.flipX = false;
+        }
+        if(zorro.position == flip2.position){
+            sp.flipX = true;
         }
     }
 }
