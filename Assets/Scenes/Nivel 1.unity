@@ -200,24 +200,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b533cf8f2a83a594cb4e5005db188144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zorro: {fileID: 117821965}
   sp: {fileID: 117821964}
-  flip1: {fileID: 2091520962}
-  flip2: {fileID: 1179392142}
   wayPoints:
   - {fileID: 805674913}
   - {fileID: 1871498270}
   - {fileID: 1867561449}
-  velocidad: 2
+  velocidad: 5
   distanciaCambio: 0.2
 --- !u!212 &117821964 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5639837172285992878, guid: 56ccd432c876b4a43b617f1b7f5da291, type: 3}
-  m_PrefabInstance: {fileID: 5639837172563872614}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &117821965 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5639837172285992879, guid: 56ccd432c876b4a43b617f1b7f5da291, type: 3}
   m_PrefabInstance: {fileID: 5639837172563872614}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &151343535
@@ -1637,7 +1629,7 @@ GameObject:
   - component: {fileID: 1179392142}
   m_Layer: 0
   m_Name: flip2
-  m_TagString: Untagged
+  m_TagString: Flip
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1650,7 +1642,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179392141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.94, y: -4, z: 0}
+  m_LocalPosition: {x: 7.44, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1947,7 +1939,6 @@ GameObject:
   - component: {fileID: 2088929395}
   - component: {fileID: 2088929393}
   - component: {fileID: 2088929394}
-  - component: {fileID: 2088929398}
   - component: {fileID: 2088929399}
   m_Layer: 5
   m_Name: player
@@ -2091,21 +2082,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &2088929398
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088929392}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 6e1d499d803f20a46b8279bfcc258aa1, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &2088929399
 Animator:
   serializedVersion: 4
@@ -2135,9 +2111,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2091520962}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: flip1
-  m_TagString: Untagged
+  m_TagString: Flip
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2150,7 +2126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091520961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -4, z: 0}
+  m_LocalPosition: {x: -0.08, y: -4, z: 0}
   m_LocalScale: {x: 2.3, y: 2.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2167,6 +2143,10 @@ PrefabInstance:
     - target: {fileID: 799586387123780825, guid: 1329ccfb0ccfdab49b06763bfe0fae1b, type: 3}
       propertyPath: m_Name
       value: Puente1
+      objectReference: {fileID: 0}
+    - target: {fileID: 799586387123780828, guid: 1329ccfb0ccfdab49b06763bfe0fae1b, type: 3}
+      propertyPath: m_UseOneWayGrouping
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 799586387123780829, guid: 1329ccfb0ccfdab49b06763bfe0fae1b, type: 3}
       propertyPath: m_RootOrder
@@ -2373,7 +2353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5639837172285992879, guid: 56ccd432c876b4a43b617f1b7f5da291, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.44
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5639837172285992879, guid: 56ccd432c876b4a43b617f1b7f5da291, type: 3}
       propertyPath: m_LocalPosition.y
